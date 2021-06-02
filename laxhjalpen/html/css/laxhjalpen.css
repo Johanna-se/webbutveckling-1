@@ -34,6 +34,9 @@ header {
 h1 {
 	font-family: 'Merienda One', cursive;
 }
+h1::first-letter {
+	color: #00AF64;
+}
 .startpage {
 	display: flex;
 	flex-wrap: wrap;
@@ -48,7 +51,6 @@ h1 {
 }
 .startpage h1 {
 	font-size: 500%;
-	font-family: 'Merienda One', cursive;
 }
 .tagline {
 	font-size: 120%;
