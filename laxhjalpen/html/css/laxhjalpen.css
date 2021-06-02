@@ -13,9 +13,10 @@ body {
 	font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
 	font-size: 100%;
 }
-section, header, footer {
-	outline: 1px solid red; /*provisorisk*/
+/*section, header, footer {
+	outline: 1px solid red;
 }
+*/
 /*
 section, header, footer, nav, div[role=main] {
     outline: 1px solid red;
@@ -56,6 +57,19 @@ Rules for Startpage
 }
 .startpage h1 {
 	font-size: 500%;
+}
+.startpage .logo {
+	width: 235px;
+	height: 198px;
+}
+.hwrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.hwrap > a {
+	margin-right: 30px;
 }
 .tagline {
 	font-size: 120%;
