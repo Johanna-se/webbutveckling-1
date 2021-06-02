@@ -10,7 +10,11 @@ html {
 body {
     margin: auto;
     max-width: 860px;
-    /* Lägg till deklarationer här */
+	font-family: sans-serif;
+	font-size: 100%;
+}
+section, header, footer {
+	outline: 1px solid red; /*provisorisk*/
 }
 /*
 section, header, footer, nav, div[role=main] {
@@ -24,15 +28,19 @@ Rules for reusable components
 */
 
 /* dborder ska vara här - avsnitt 11.7 */
-
+header {
+	text-align: center;
+}
 /*
 ==================================================================================
 Page header, all pages
 ==================================================================================
 */
-header {
-    /* text-align: center; */
+.startpage h1 {
+	font-size: 500%;
 }
+
+
 /*
 ==================================================================================
 Page footer rules
