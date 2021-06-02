@@ -39,13 +39,24 @@ Page header, all pages
 .startpage h1 {
 	font-size: 500%;
 }
-
-
-/*
-==================================================================================
-Page footer rules
-==================================================================================
-*/
+.tagline {
+	font-size: 120%;
+	padding: 0.5em;
+	border-top: 3px double #00AF64;
+	border-bottom: 3px double #00AF64;
+	margin: 1em 0;
+}
+.menu > h2 {
+	margin: 0 0 1em;
+	padding: 2em 0;
+	background-color: #F5F5F5;
+	text-align: center;
+}
+footer {
+	margin-top: 3em;
+	text-align: center;
+	color: #999;
+}
 
 /* TODO Avsnitt 5.2 */
 
@@ -60,13 +71,6 @@ Main site navigation
 /* TODO Avsnitt 5.2, 5.4, 5.5, 5.6, 11.4.2 */
 
 
-/*
-==================================================================================
-Start page rules
-==================================================================================
-*/
-
-/* Regler med klassen .startpage, avsnitt 5.2, 5.3 och 5.8 */
 
 /*
 ==================================================================================
