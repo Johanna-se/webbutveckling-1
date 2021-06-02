@@ -59,6 +59,20 @@ header {
 	background-color: #F5F5F5;
 	text-align: center;
 }
+.menu a:link,
+.menu a:visited {
+	text-decoration: none;
+	color: #000;
+}
+.menu a:focus,
+.menu a:hover {
+	text-decoration: underline;
+	color: #A62F00;
+}
+.menu a:active {
+	text-decoration: underline;
+	color: #FF4900;
+}
 footer {
 	margin-top: 3em;
 	text-align: center;
