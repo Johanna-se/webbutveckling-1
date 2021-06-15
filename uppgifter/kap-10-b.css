@@ -27,3 +27,10 @@ div {
     left: 50px;
     top: 50px;
 }
+.beta:hover {
+    background-color: blueviolet;
+    left: 50px;
+    top: 50px;
+	transition: 1s;
+	transform: scale(0.71 , 0.71) rotate(45deg);
+}
