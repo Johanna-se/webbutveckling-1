@@ -83,6 +83,7 @@ Rules for Startpage
 Rules for menu
 ==================================================================================
 */
+.menu > li,
 .menu > h2 {
 	margin: 0 0 1em;
 	padding: 2em 0;
@@ -105,6 +106,14 @@ Rules for menu
 .menu a:active {
 	text-decoration: underline;
 	color: #FF4900;
+}
+.menu {
+	margin: 1em 0;
+	padding: 0;
+}
+.menu li {
+	margin: 0 0 1rem;
+	list-style: none;
 }
 /*
 ==================================================================================
