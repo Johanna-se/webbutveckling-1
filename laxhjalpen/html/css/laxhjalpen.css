@@ -13,55 +13,6 @@ body {
 	font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
 	font-size: 100%;
 }
-/*section, header, footer {
-	outline: 1px solid red;
-}
-*/
-/*
-section, header, footer, nav, div[role=main] {
-    outline: 1px solid red;
-}
-*/
-/*
-==================================================================================
-Rules for reusable components
-==================================================================================
-*/
-
-/* dborder ska vara här - avsnitt 11.7 */
-header {
-	text-align: center;
-}
-h1 {
-	font-family: 'Merienda One', cursive;
-}
-h1::first-letter {
-	color: #00AF64;
-}
-/*
-==================================================================================
-Rules for Startpage
-==================================================================================
-*/
-.startpage {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.startpage header,
-.startpage footer {
-		flex: 0 0 100%;
-}
-.startpage section{
-	flex: 0 0 22%;
-}
-.startpage h1 {
-	font-size: 500%;
-}
-.startpage .logo {
-	width: 235px;
-	height: 198px;
-}
 .hwrap {
 	display: flex;
 	flex-wrap: wrap;
@@ -78,6 +29,81 @@ Rules for Startpage
 	border-bottom: 3px double #00AF64;
 	margin: 1em 0;
 }
+header {
+	text-align: center;
+	flex: 0 0 100%;
+}
+section, header, footer {
+	outline: 1px solid red;
+}
+section, header, footer, nav, div[role=main] {
+    outline: 1px solid red;
+}
+/*
+==================================================================================
+Rules for reusable components
+==================================================================================
+*/
+.dborder {
+	border: 1px solid #ccc;
+	padding: 5pxS;
+}
+article {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	border-bottom: 3px double #00af64;
+}
+article:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+h1 {
+	font-family: 'Merienda One', cursive;
+}
+h1::first-letter {
+	color: #00AF64;
+}
+figure {
+	float: left;
+	margin: 0;
+}
+figure img {
+	width: 128px;
+	height: 128px;
+}
+figcaption {
+	font: italic bolder 110% sans-serif;
+	font-family: inherit;
+	text-align: center;
+	text-transform: uppercase;
+	color: #666;
+}
+/*
+==================================================================================
+Rules for Startpage
+==================================================================================
+*/
+.startpage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*Behövs denna? */
+.startpage header,
+.startpage footer {
+	flex: 0 0 100%;
+}
+.startpage section{
+	flex: 0 0 22%;
+}
+.startpage h1 {
+	font-size: 500%;
+}
+.startpage .logo {
+	width: 235px;
+	height: 198px;
+}
+
 /*
 ==================================================================================
 Rules for menu
@@ -124,6 +150,7 @@ footer {
 	margin-top: 3em;
 	text-align: center;
 	color: #999;
+	flex: 0 0 100%;
 }
 
 /*
@@ -131,7 +158,11 @@ footer {
 Subpages
 ==================================================================================
 */
-
+.subpage {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 .subpage .logo {
 		width: 146px;
 		height: 123px;
@@ -141,6 +172,20 @@ Subpages
 }
 h1 > span {
 	color: #a62f00
+}
+.subpage .hwrap {
+	justify-content: space-between;
+}
+.subpage .hwrap > a,
+nav{
+	flex: 0 1 20%;
+	min-width: 146px;
+	margin-right: 10px;
+	outline: 1px solid;
+}
+.subpage .hwrap > h1, 
+div[role=main] {
+	flex: 1 1 300px;
 }
 /*
 ==================================================================================
