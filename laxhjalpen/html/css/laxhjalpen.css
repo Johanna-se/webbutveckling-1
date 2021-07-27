@@ -78,6 +78,10 @@ figcaption {
 	text-transform: uppercase;
 	color: #666;
 }
+article p {
+	margin-left: 140px;
+	hyphens: auto;
+}
 /*
 ==================================================================================
 Rules for Startpage
