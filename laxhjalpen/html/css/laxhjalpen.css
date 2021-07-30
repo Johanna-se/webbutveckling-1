@@ -224,6 +224,15 @@ td {
 th:not(:last-child) {
 	border-right: 1px solid #f2f2f2;
 }
+tr:target {
+	background-color: #61d7a4;
+}
+tr:hover {
+	background-color: #ff9b73;
+}
+tr {
+	transition: background-color 1s;
+}
 /*
 ==================================================================================
 Nivo Slider
