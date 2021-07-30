@@ -197,8 +197,33 @@ Tables
 ==================================================================================
 */
 
-/* TODO Avsnitt 12.3 */
-
+table {
+	border-spacing: 0,
+	border: 1px solid #d3d3d3;
+	width: 96%;
+	margin: 1em auto 2em;
+	border-radius: 5px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+thead {
+	font-size: 150%;
+	text-shadow: #fff 1px 1px 1px;
+}
+th, td {
+	padding: 1.1rem 1.8rem 1.1rem;
+}
+th {
+	padding-top: 1.4rem;
+	background: #ddd;
+	text-align: left;
+}
+td {
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+th:not(:last-child) {
+	border-right: 1px solid #f2f2f2;
+}
 /*
 ==================================================================================
 Nivo Slider
