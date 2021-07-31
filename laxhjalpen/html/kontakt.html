@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+    <title>Kontakt - Läxhjälpen</title>
+	<link href="http://fonts.googleapis.com/css?family=Merienda+One" rel='stylesheet' />
+	<link rel="Stylesheet" href="css/laxhjalpen.css" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body class="subpage">
+	<header> 
+		<div class="hrap">
+			<a href="./"><img class="logo" alt="startsida" src="img/laxlogo.png"/></a>
+			<h1>Läxhälpen: <span>Kontakt</span></h1>
+		</div>
+	</header>
+	<nav>
+		<ul class="menu">
+			<li><a href="om-oss.html">Vilka vi är</a></li>
+			<li><a href="arbeten.html">Vad vi gör</a></li>
+			<li><a href="blog.pnp">Blogg</a></li>
+			<li><a href="contact.pnp">Kontakt</a></li>
+		</ul>
+	</nav>
+	<div role="main">
+        <h2>Kontaktformulär</h2>
+        <form action="contact.php" method="post">
+            <fieldset>
+                <legend>Vem är du?</legend>
+                <p>
+                    <label for="uname">Namn:</label>
+                    <label for="uname" class="reqfield">
+                        <strong class="required" title="Obligatorisk uppgift">*</strong>
+                    </label>
+                    <input type="text" name="uname" id="uname" required placeholder="Förnamn Efternamn"/>
+                </p>
+                <p>
+                    <label for="umail">Mejladress</label>
+                    <label for="umail" class="reqfield">
+                        <strong class="required" title="Obligatorisk Uppgift">*</strong>
+                    </label>
+                    <input type="email" name="umail" id="umail" required placeholder="foo@bar.com" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Meddelande</legend>
+                <p>
+                    <label for="mmessage">Text</label>
+                    <label for="mmessage" class="reqfield">
+                        <strong class="required" title="Obligatorisk Uppgift">*</strong>
+                    </label>
+                    <textarea id="mmessage" name="mmessage" required placeholder="Skriv ditt meddelande. Minst 25 tecken"></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <input value="Skicka" type="submit" />
+                </p>
+                <!--
+                    The following field is used to prevent multiple submits.
+                    If removed it will be considered a configuration error.
+                -->
+                <input name="prevent_multiple_submits" value="{$random_string}" type="hidden" />
+            </fieldset>
+        </form>
+	</div>
+	<footer></footer>
+</body>
+</html>
