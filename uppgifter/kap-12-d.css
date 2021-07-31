@@ -9,6 +9,9 @@ table, th, td {
     border-spacing: 0;
     margin: auto;
 }
+.number {
+    text-align: right;
+}
 #slutspel tr:nth-child(even){
     background-color: rgb(187, 187, 187);
 }
